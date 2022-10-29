@@ -1,0 +1,183 @@
+@import url('https:fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#canvas1 {
+    position: absolute;
+}
+
+.controls{
+    position: absolute;
+    z-index: 100;     
+}
+
+img {
+    display: none; 
+}
+
+button{
+    padding: 20%;
+    font-size: 30px;
+    margin: 40px;
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    background: black;
+    transition: 1.3s;
+    border: none;
+    transform: translate(15vh,0vh);
+}
+button:hover {
+    color: rgb(206, 156, 156);
+    background: rgba(172, 0, 0, 0.774);
+}
+
+.pixelControl{
+    width: 15%;
+   font-size: 20%;
+   position: absolute;
+   right: 5vw;
+   bottom: 50vh;
+}
+
+.pixelControl > label {
+    width: 60%;
+    color: blue;
+    font-size: 30px;
+}
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#7597de);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+}
+header .logo{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    pad: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.avtive
+{
+    background: white;
+    color: #2b1055;
+}
+#logopng{
+    position: absolute;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 122px;
+
+}
+.last{
+    margin-left: 1540px;
+    bottom: 10%;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+.line__1{
+    display: flex;
+    bottom: 5%;
+}
+h3 {
+    font-family: 'Josefin Slab', serif;
+    position: absolute;
+    font-size: 22px;
+    color: rgb(240, 200, 140);
+}
+  
+  .line__1,
+  .last {
+    white-space: nowrap; /* keep text in one line */
+    overflow: hidden; /* hide text behind the cursor */
+    margin: 0.5rem auto;
+  }
+  
+  .line__1 {
+   
+  
+    /* define animation types for text + cursor */
+    animation: animated-text__1 10s steps(100, end) 1s 1 normal both,
+      animated-cursor__1 300ms steps(15, end) 4;
+  }
+  
+  .last {
+  
+    /* define animation types for text + cursor */
+    animation: animated-text__2 30s steps(1000, end) 1s 1 normal both,
+      animated-cursor__2 900ms steps(30, end) infinite;
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+  }
+  
+  @keyframes animated-cursor__1 {
+    from {
+      border-right-color: rgba(17, 17, 17, 0.9);
+    }
+    to {
+      border-right-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+  @keyframes animated-cursor__2 {
+    from {
+      border-right-color: rgba(17, 17, 17, 0.9);
+    }
+    to {
+      border-right-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+  @keyframes animated-text__1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 45rem;
+    }
+  }
+  
+  @keyframes animated-text__2 {
+    from {
+      width: 200rem;
+    }
+    to {
+      width: 99%;
+    }
+  }
+  
